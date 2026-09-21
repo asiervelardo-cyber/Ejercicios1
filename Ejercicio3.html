@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <title>Ejercicio 3</title>
+        <script>
+            window.onload = function(){
+                document.getElementById("sumar").onclick = function(){
+                    let n1 = document.getElementById("primero").value;
+                    let n2 = document.getElementById("segundo").value;
+                    let suma = parseInt(n1) + parseInt(n2);
+
+                    alert(suma);
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <input id="primero">
+        <input id="segundo">
+        <button id="sumar">Sumar</button>
+    </body>
+</html>
