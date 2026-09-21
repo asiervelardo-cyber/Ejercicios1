@@ -5,9 +5,10 @@
             window.onload = function(){
                 //Creamos una funcion que detecte cuando se le da click a cambio
                 document.getElementById("cambio").onclick = function(){
+                    //Guardamos la informacion de los input en las variables
                     let ancho = document.getElementById("ancho").value;
                     let alto = document.getElementById("alto").value;
-
+                    //Creamos la variable del cambio en funcion a la informacion anteriormente guardada
                     let cambio = "width: " + ancho + "px;height: " + alto + "px";
                     //Cambiamos las dimensiones de la imagen
                     document.getElementById("imagen").style = cambio;
