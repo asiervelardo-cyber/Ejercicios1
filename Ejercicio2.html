@@ -29,8 +29,11 @@
                 //Mando la tabla al html
                 contenedor.appendChild(tabla);
 
+                //Creamos una funcion para detectar cuando se le de click a el botón
                 document.getElementById("darcolor").onclick = function(){
+                    //Creamo la variable del estilo
                     const color = "color: blue;font-size: 12px";
+                    //Aplicamos el estilo al contenedor
                     document.getElementById("contenedor").style= color;
                 }
             }

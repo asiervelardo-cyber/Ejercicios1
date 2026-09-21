@@ -3,11 +3,14 @@
         <title>Ejercicio 3</title>
         <script>
             window.onload = function(){
+                //Creamos una funcion que detecte cuando se le da click a sumar
                 document.getElementById("sumar").onclick = function(){
+                    //Guardamos los valores de los input
                     let n1 = document.getElementById("primero").value;
                     let n2 = document.getElementById("segundo").value;
+                    //Hacemos la suma de los input
                     let suma = parseInt(n1) + parseInt(n2);
-
+                    //Mostramos la suma con un alert
                     alert(suma);
                 }
             }
