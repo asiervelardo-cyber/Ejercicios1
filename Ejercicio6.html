@@ -5,14 +5,21 @@
             window.onload = function(){
                 //Creamos una funcion que detecte cuando se le da click a cambio
                 document.getElementById("cambio").onclick = function(){
+                    let ancho = document.getElementById("ancho").value;
+                    let alto = document.getElementById("alto").value;
+
+                    let cambio = "width: " + ancho + "px;height: " + alto + "px";
                     //Cambiamos las dimensiones de la imagen
-                    document.getElementById("imagen").style = "width: 100px; height: 100px";
+                    document.getElementById("imagen").style = cambio;
                 }
             }
         </script>
     </head>
     <body>
         <img id="imagen" src="https://i.blogs.es/f7234d/imagen/500_333.webp">
+        <input id="ancho">
+        <span>X</span>
+        <input id="alto">
         <button id="cambio">Cambiar tamaño</button>
     </body>
 </html>
