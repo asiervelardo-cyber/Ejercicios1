@@ -28,6 +28,25 @@
 
                 //Mando la tabla al html
                 contenedor.appendChild(tabla);
+
+                /* Se podría hacer con document.write
+                    document.write("<table>");
+                    document.write("<tr><td>Fila 1</td></tr>");
+                    document.write("<tr><td>Fila 2</td></tr>");
+                    document.write("</table>");
+
+                    Tambien con object.addRow y objet.addCell
+                    
+                    const table = document.createElement("table");
+
+                    estilo opcional con tabla.addAtribute(estilo)
+
+                    for(let i=1;i<=2;i++){
+                        const fila = tabla.insertRow();
+                        cont celda = fila.insertCell();
+                        celda.textContent = "Fila " + i;
+                    }
+                */
             }
         </script>
     </head>
